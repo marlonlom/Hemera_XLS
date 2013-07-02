@@ -1,0 +1,31 @@
+context data for download excel report dynamically
+
+view: level01 - departamentos
+items:"05;08;11;13;15;17;18;19;20;23;25;27;41;44;47;50;52;54;63;66;68;70;73;76;81;85;86;88;91;94;95;97;99",
+level:"01",
+root01:"none",
+root02:"none"
+
+view: level01 - áreas metropolitanas
+items:"am001;am002;am003;am004;am005;am006"
+level:"02"
+root01:"none"
+root02:"none"
+
+view:level01 - distritos
+items:"dstr001;dstr002;dstr003;dstr004;dstr005"
+level:"03"
+root01:"none"
+root02:"none"
+
+view: level02 - municipios (ej. desde areas metropolitanas)
+items:"08001;08296;08433;08573;08758"
+level:"04"
+root01:"areasmetrop/am003"
+root02:"none"
+
+view: centros poblados, dado un dustrito y un municipio
+items:"47001000;47001001;47001...01035;47001036;47001038"
+level:"05"
+root01:"distritos/dstr004"
+root02:"47001"
